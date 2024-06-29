@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Meta tag: used to provide metadata about the HTML document-->
+    <!--Metadata will not be displayed on the page, but will be machine parsable-->
+    <meta
+      name="description"
+      content="The HTML <meta> element represents metadata that cannot be represented by other HTML meta-related elements, like base, link, script, style or title."
+    />
+    <title>HTML NOTE</title>
+  </head>
+  <body>
+    <!--1st-->
+    <h1>I like pizza</h1>
+    <!--Break line-->
+    <br />
+
+    <h2>I like pizza</h2>
+    <hr />
+    <!--Horizantal rule-->
+    <h2>I like pizza</h2>
+    <!--2nd Hyperlinnk-->
+    <!--target attribute:_blank to open on a new window/_self(_top,_parent) to open in the same windoe -->
+    <!--Title attribute : will apear upon hovering the tex within the anchor tag-->
+    <a href="http://www.google.com" target="_top">WHat is wrong with you</a
+    ><br />
+    <!--3rd Images-->
+    <!--Height attribute-->
+    <!--width attribute-->
+    <!--Alt attribute: Show text description-->
+    <!--title attribute-->
+    <!--we can use image instead of text in anchor tag-->
+    <img
+      src="./images/saber.png"
+      height="300"
+      width="500"
+      alt="Pic of my saber"
+      title="My waifu"
+    />
+    <!--4th Audio Adding-->
+    <!--controls helps the audio play-->
+    <!--there are some boolien attribute of controls such as autoplay,muted,loop-->
+    <br />
+    <audio controls src="./audio/apple-apple-iphone-60164.mp3">IPHONE</audio>
+    <!--5th video Adding-->
+    <!--Only supports webM , MP4,Ogg-->
+    <video
+      controls
+      src="./Video/Rick Astley - Never Gonna Give You Up (Official Music Video).mkv"
+    >
+      VIDEO ISnT THERe
+    </video>
+    <!--6th TEXT FOrmating-->
+    <p>This is normal text</p>
+    <!--b: bold-->
+    <p><b>This is Bold text</b></p>
+    <!--i: italic-->
+    <p><i>This is italic text</i></p>
+    <!--big: bigger text-->
+    <p><big>This is normal text</big></p>
+    <!--big: smaller text-->
+    <p><small>This is normal text</small></p>
+    <!--u/ins: underlined text-->
+    <p><u>This is normal text</u></p>
+    <p><ins>This is normal text</ins></p>
+    <!--del: deleted text-->
+    <p><del>This is normal text</del></p>
+    <!--mark: highlite text-->
+    <p><mark>This is normal text</mark></p>
+    <!--Sub: base -->
+    <p>This is 1<sub>normal</sub> text</p>
+    <!--sup: superscript or power of the text-->
+    <p>This is 1<sup>normal</sup> text</p>
+    <!--7th List-->
+    <!--Undorderd list (ul)-->
+    <!--Li : list item-->
+    <h4>Unordered List</h4>
+    <ul>
+      <li>Pizza</li>
+      <li>apel</li>
+      <li>kotbel</li>
+      <li>anarosh</li>
+      <li>Pizza</li>
+    </ul>
+    <!--Orderd list (ol)-->
+    <!--we can set the type with type attribute (ol)-->
+    <h4>Ordered list</h4>
+    <ol type="A">
+      <li>
+        Pizza
+        <!--Sub list-->
+        <ul>
+          <li>peperoni</li>
+          <li>peperoni</li>
+          <li>peperoni</li>
+          <li>peperoni</li>
+        </ul>
+      </li>
+      <li>apel</li>
+      <li>kotbel</li>
+      <li>anarosh</li>
+      <li>Pizza</li>
+    </ol>
+    <!--Deacription list-->
+    <!--dt- description title-->
+    <!--dd- description paragraph-->
+    <dl>
+      <dt>HTML</dt>
+      <dd>I dont know</dd>
+      <dt>CSS</dt>
+      <dd>I dont know</dd>
+      <dt>JavaScript</dt>
+      <dd>I dont know</dd>
+    </dl>
+    <!--table-->
+    <table bgcolor="black">
+      <tr bgcolor="white">
+        <th width="100">Name</th>
+        <th width="100">ROll</th>
+        <th width="100">Address</th>
+        <th width="100">Department</th>
+      </tr>
+      <tr bgcolor="white" align="center">
+        <td width="100">Obaidul</td>
+        <td width="100">22103347</td>
+        <td width="100">bushigor</td>
+        <td width="100">CSE</td>
+      </tr>
+    </table>
+    <!--Color scheme-->
+    <h1 style="color: red">I like pizza</h1>
+    <h1 style="color: rgb(209, 147, 48)">I like pizza</h1>
+    <h1 style="color: #d19330">I like pizza</h1>
+    <!--div, span-->
+    <!--Span: add markup or a text of a part  of the code, use to style part of a code-->
+    <p>My name is <span style="color: red">Obaidul</span></p>
+    <!--div--->
+    <!--use to style a block of code-->
+    <div style="background-color: red; width: 100px; height: 100px">
+      <p>
+        My name is <span style="color: red">Obaidul</span> My name is
+        <span style="color: red">Obaidul</span> My name is
+        <span style="color: red">Obaidul</span> My name is
+        <span style="color: red">Obaidul</span> My name is
+        <span style="color: red">Obaidul</span>
+      </p>
+    </div>
+    <!--iframe-->
+    <!--used to embed another document within the current HTML document-->
+    <iframe
+      style="border: 0cm"
+      src="https://www.youtube.com/embed/9bZkp7q19f0"
+      width="560"
+      height="315"
+    ></iframe>
+    <br />
+    <!--Button-->
+    <a href="http://www.google.com" target="_top"
+      ><button style="background-color: aqua">Click me</button></a
+    >
+    <!--Form-->
+    <form action="">
+      <div class="">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" /><br />
+      </div>
+      <div class="">
+        <label for="lname">First Name</label>
+        <input type="text" id="lname" name="fname" /><br />
+      </div>
+      <div class="">
+        <label for="bdate">lDate of bith</label>
+        <input type="date" id="bdate" name="bdate" /><br />
+      </div>
+      <div class="">
+        <label for="bdate">lDate of bith</label>
+        <input type="date" id="bdate" name="bdate" /><br />
+      </div>
+      <div class="">
+        <label>LOLA1</label>
+        <input type="radio" id="namew" name="title" />
+        <label>LOLA2</label>
+        <input type="radio" id="namew" name="title" />
+        <label>LOLA3</label>
+        <input type="radio" id="namew" name="title" />
+      </div>
+      <div class="">
+        <label for="payment">Payment</label>
+        <select id="payment" name="payment">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+      <div class="">
+        <label for="message">Message</label>
+        <input type="checkbox" id="message" name="message" /><br />
+      </div>
+    </form>
+  </body>
+</html>

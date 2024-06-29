@@ -1,0 +1,225 @@
+body {
+  /*background-color: lightblue;*/
+}
+.classing {
+  background-color: cornflowerblue;
+  /*font assigning this also can be done using Google FOnt
+  Some property of font*/
+  font-family: "Courier New", Courier, monospace;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  margin: auto;
+}
+#Beginning1 {
+  background-color: darkblue;
+  color: white;
+  padding: 10px;
+}
+#Beginning2 {
+  background-color: cyan;
+  color: white;
+  padding: 2%;
+}
+.Second {
+  background-color: palevioletred;
+  color: white;
+  /*padding : top right down left*/
+  padding: 10px 0px 5px 10px;
+  border: 2px solid black;
+}
+.Second .p1 {
+  border-style: dashed;
+  border-width: 5px;
+  border-color: black;
+  border-radius: 4px;
+}
+.Second .p2 {
+  border-style: dotted;
+  border-width: 5px;
+  border-color: black;
+  border-radius: 4px;
+}
+.Second .p3 {
+  border-style: Double;
+}
+.Second .p4 {
+  border-style: ridge;
+}
+.Second .p5 {
+  border-style: inset;
+}
+.Second .p6 {
+  border-style: outset;
+}
+.third {
+  background: linear-gradient(to right, skyblue, darkblue);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+/*The background-repeat: no-repeat; ensures that the gradient doesn't repeat, and background-attachment: fixed; makes the background fixed when scrolling. The text color within elements with this class will be white due to color: white;.*/
+.fourth {
+  background: url("ForestShrine.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+/*The background-size: cover; property ensures that the background image covers the entire element, and the text color within elements with this class will be white due to color: white;.*/
+.fifth .box1 {
+  border: 2px solid black;
+  background-color: rgb(28, 211, 119);
+  color: white;
+  padding: 20px;
+  height: 200px;
+  width: 200px;
+  margin-left: auto; /*shift the box on the right*/
+  margin-right: auto; /*if we use both left and right auto it will be centered*/
+}
+.fifth .box2 {
+  border: 2px solid black;
+  background-color: rgb(143, 199, 80);
+  color: white;
+  margin: 10px;
+  height: 200px;
+  width: 200px;
+}
+/*float property is used to make the text float left or right*/
+.sixth {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 22px;
+}
+.sixth .box1 {
+  border: 2px solid black;
+  background-color: rgb(28, 211, 119);
+  color: white;
+  padding: 20px;
+  height: 200px;
+  width: 200px;
+  float: left;
+}
+.sixth p {
+  clear: left; /*to stop floating*/
+}
+/*position
+1. absolute: The element is positioned relative to its first positioned (not static) ancestor element
+2. fixed: The element is positioned relative to the browser window
+3. relative: The element is positioned relative to its normal position
+4. static: The element is positioned according to the normal flow of the document
+5. sticky: The element is treated as relative positioned until it crosses a specified threshold, at which point it is treated as fixed positioned
+
+*/
+.seventh .box1 {
+  border: 1px solid;
+  height: 300px;
+  width: 300px;
+  background-color: green;
+  /*
+  position: relative - this will help us displace the box with respect to the normal position
+  by using top left right bottom
+  */
+  position: relative;
+  right: 250;
+}
+.seventh .box1 .box2 {
+  border: 1px solid;
+  height: 100px;
+  width: 100px;
+  border-radius: 150px;
+  background-color: red;
+  position: absolute;
+  top: 100px;
+  right: 100px;
+}
+#transform1 {
+  background-color: skyblue;
+  border: 1px solid black;
+  color: black;
+  height: 300px;
+  width: 300px;
+  font-size: 220px;
+  text-align: center;
+
+  transform: translateX(100px);
+  transform: translateY(100px);
+  transform: translate(100px, 100px);
+  transform: rotate(20deg);
+  transform: scale(1.5);
+  transform: skewX(20deg);
+  transform: skewY(20deg);
+  transform: skew(20deg, 20deg);
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+  /*tranform matrix property is It seems like you're asking about the `transform: matrix()` property in CSS. However, the code snippet you've provided is incomplete and contains a typo. The correct property is `transform`, not `tranform`.
+
+The `transform: matrix()` function in CSS allows you to directly specify a 2D transformation in a single function. It takes six parameters, which are mathematical values, to control the transformation.
+
+Here's the general syntax:
+
+```css
+transform: matrix(a, b, c, d, tx, ty);
+```
+
+- `a` and `d` are for scaling the element. 
+- `b` and `c` are for skewing.
+- `tx` and `ty` are for translating (moving) the element.
+
+This will apply a transformation to the `div` element according to the specified matrix values.  */
+}
+#animation1 {
+  background-color: skyblue;
+  border: 1px solid black;
+  color: black;
+  height: 300px;
+  width: 300px;
+  font-size: 220px;
+  text-align: center;
+  /*
+  animation: slideIn;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out; 
+  animation-timing-function: linear;
+  animation-play-state: running;
+  */
+  animation: myColorChange 2s 1s infinite alternate running linear;
+}
+#animation1:hover {
+}
+#animation1:active {
+  animation-play-state: paused;
+}
+@keyframes slideIn {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+@keyframes myRotate {
+  100% {
+    /*transform: rotateX(360deg);*/
+    /*transform: rotateY(360deg);*/
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes myOpacity {
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes myScale {
+  100% {
+    transform: scale(0.5, 0.5);
+  }
+}
+@keyframes myColorChange {
+  100% {
+    background-color: red;
+  }
+}
